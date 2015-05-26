@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset = "utf-8" />
+	<title> Archery Perks Overhaul </title>
+	
+<style>
+	/* ---------------------------------- SECTIONS ---------------------------------- */
+	/* BODY (background, default font) */
+	body {
+		background: bisque;
+		font-family: Verdana, Geneva, sans-serif;
+		font-size: 16px;
+		overflow: auto;
+	}
+	
+	/* WRAPPER (main overlay) */
+	#wrapper {
+		margin: 0 auto;
+		max-width: 1020px;
+		width: 98%;
+		background: black;
+		border: 1px solid white;
+		border-radius: 2px;
+		box-shadow: 0px 0px 10px black;
+	}
+	
+	/* TOPBAR (thin bar on top) */
+	#topbar {
+	width: 100%; /* full length of wrapper */
+	background: saddlebrown;
+	overflow: hidden;
+	
+	}
+	
+	/* TOPBAR TEXT (author credit) */
+	#topbar p {
+		text-align: left;
+		font-size: 12px;
+		padding: 0% 0% 0% 5%;
+		color: bisque;
+	}
+	
+	/* NAVIGATION LIST */
+	nav ul {
+	list-style: none;
+	margin: 0;
+	padding-left: 1%; /* push away from left */
+	}
+	
+	/* NAVIGATION TABS */
+	nav ul li {
+		float: left;
+		width: 19%;
+		padding-right: 1%; /* make space between tabs */
+	}
+	
+	/* NAVIGATION TEXT */
+	nav ul li a {
+		background: bisque;
+		display: block;
+		padding: 5%;
+		font-weight: bold;
+		font-size: 18px;
+		color: saddlebrown;
+		text-align: center;
+	}
+	
+	/* NAVIGATION ACTIVE TAB */
+	nav ul li a:hover, nav ul li.active a {
+		background: saddlebrown;
+		color: bisque;
+	}
+	
+	/* HEADER IMAGE */
+	header {
+		margin: 0% 2%;
+	}
+	
+	/* COLUMNS */
+	.column {
+		width: 46%;
+		float: left;
+		margin: 1% 2%;
+		text-align: left;
+	}
+	
+	/* CLEARFIX */
+	.clearfix {
+		clear: both;
+	}
+	
+	/* ---------------------------------- DEFAULT ---------------------------------- */
+	
+	/* HEADERS */
+	h1, h2, h3, h4, h5, h6 {
+		text-align: center;
+		color: saddlebrown;
+		font-size: 20px;
+		margin: 0% 2% 0% 2%;
+	}
+
+	/* PARAGRAPHS */
+	p {
+		padding: 0%;
+		color: bisque;
+	}
+	
+	/* LIST ELEMENTS */
+	li {
+		padding: 0%;
+		color: bisque;
+		list-style: none;
+	}
+	
+	/* IMAGES */
+	img {
+		max-width: 100%;
+		height: auto;
+		width: auto;
+	    display: block;
+		margin: 0 auto;
+	}
+	
+	/* LINKS */
+	a {
+		text-decoration: none;
+		color: bisque;
+	}
+	
+	/* ---------------------------------- MEDIA ---------------------------------- */
+	@media screen and (max-width: 478px) {
+		body {
+			font-size: 10px;
+		}
+		.intro {
+			font-size: 13px;
+		}
+		h1, h2, h3, h4, h5 ,h6 {
+			font-size: 16px;
+		}
+		.column {
+			width: 96%;
+		}
+	}
+	@media screen and (max-width: 740px) {
+		nav {
+			width: 100%;
+			margin-bottom: 10px;
+		}
+		nav ul{
+			list-style: none;
+			margin: 0 auto;
+			padding-left: 0;
+		}
+		nav ul li {
+			width: 100%;
+		}
+		nav ul li a {
+			padding: 0;
+			border-top: 1px solid black;
+			font-size: 16px;
+		}
+	}
+</style>
+</head>
+
+<body>
+	<div id = "wrapper">
+		<div id = "topbar">
+			<p> A mod by <strong> <a href = "http://www.nexusmods.com/skyrim/users/4979708/?"> NutellaPhreak </a></strong> </p>
+		</div>
+		
+		<nav>
+			<ul>
+				<li> <a href = "file:///C:/Users/Taylor22211/Desktop/HTML%20Website/Website%20Home.html"> Home </a></li>
+				<li> <a href = "file:///C:/Users/Taylor22211/Desktop/HTML%20Website/Website%20Perks.html#"> Perks </a></li>
+				<li> <a href = "file:///C:/Users/Taylor22211/Desktop/HTML%20Website/Website%20Arrows.html"> Arrows </a></li>
+				<li class = 'active'> <a href = "#"> Images </a></li>
+				<li> <a href = "file:///C:/Users/Taylor22211/Desktop/HTML%20Website/Website%20Credits.html"> Credits </a></li>
+			</ul>
+			<div class = "clearfix"></div>
+		</nav>
+		
+		<header>
+			<a href = "http://www.nexusmods.com/skyrim/mods/65388/?"><img src = "http://i.imgur.com/XnacZKs.jpg" alt = "Archery Perks Overhaul" title = "Archery Perks Overhaul"> </a>
+		</header>
+		
+		<div>
+			<h3>Distance references</h3>
+		</div>
+		<div class = "images">
+			<div class = "clearfix"></div>
+			
+			<div class = "column">
+				<img src = "http://i.imgur.com/lkARpci.jpg">
+			</div>
+			
+			<div class = "column">
+				<img src = "http://i.imgur.com/REhHmfK.jpg">
+			</div>
+			
+			<div class = "column">
+				<img src = "http://i.imgur.com/yn8R7Fg.jpg">
+			</div>
+			
+			<div class = "column">
+				<img src = "http://i.imgur.com/i3e2VQf.jpg">
+			</div>
+			
+			<div class = "column">
+				<img src = "http://i.imgur.com/vCzLLIR.jpg">
+			</div>
+			
+			<div class = "column">
+				<img src = "http://i.imgur.com/e2HbdN2.jpg">
+			</div>
+			
+			<div class = "column">
+				<img src = "http://i.imgur.com/JMVxAfj.jpg">
+			</div>
+			<div class = "clearfix"></div>
+			<div>
+				<h3>Other images</h3>
+			</div>
+			
+			<div class = "column">
+				<img src = "http://static-8.nexusmods.com/15/mods/110/images/65388-2-1430527816.jpg">
+			</div>
+			
+			<div class = "column">
+				<img src = "http://www.meandmydiabetes.com/wp-content/uploads/2011/08/toast.jpg">
+			</div>
+			
+			<div class = "clearfix"></div>
+			
+		</div>
+		
+	</div>
+	
+</body>
+</html>

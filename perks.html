@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset = "utf-8" />
+	<title> Archery Perks Overhaul - Perks </title>
+	
+<style>
+	/* ---------------------------------- SECTIONS ---------------------------------- */
+	/* BODY (background, default font) */
+	body {
+		background: bisque;
+		font-family: Verdana, Geneva, sans-serif;
+		font-size: 14px;
+		overflow: auto;
+	}
+	
+	/* WRAPPER (main overlay) */
+	#wrapper {
+		margin: 0 auto;
+		max-width: 1020px;
+		width: 98%;
+		background: black;
+		border: 1px solid white;
+		border-radius: 2px;
+		box-shadow: 0px 0px 10px black;
+	}
+	
+	/* TOPBAR (thin bar on top) */
+	#topbar {
+	width: 100%; /* full length of wrapper */
+	background: saddlebrown;
+	overflow: hidden;
+	
+	}
+	
+	/* TOPBAR TEXT (author credit) */
+	#topbar p {
+		text-align: left;
+		font-size: 12px;
+		padding: 0% 0% 0% 5%;
+		color: bisque;
+	}
+	
+	/* NAVIGATION LIST */
+	nav ul {
+	list-style: none;
+	margin: 0;
+	padding-left: 1%; /* push away from left */
+	}
+	
+	/* NAVIGATION TABS */
+	nav ul li {
+		float: left;
+		width: 19%;
+		padding-right: 1%; /* make space between tabs */
+	}
+	
+	/* NAVIGATION TEXT */
+	nav ul li a {
+		background: bisque;
+		display: block;
+		padding: 5%;
+		font-weight: bold;
+		font-size: 18px;
+		color: saddlebrown;
+		text-align: center;
+	}
+	
+	/* NAVIGATION ACTIVE TAB */
+	nav ul li a:hover, nav ul li.active a {
+		background: saddlebrown;
+		color: bisque;
+	}
+	
+	/* HEADER IMAGE */
+	header {
+		margin: 0% 2%;
+	}
+	
+	/* INTRO */
+	.intro {
+		font-size: 18px;
+		text-align: center;
+		margin: 0% 2%;
+	}
+	
+	/* LEFT COLUMN */
+	.left-column {
+		width: 36%;
+		float: left;
+		margin: 0% 2% 0% 2%;
+		text-align: left;
+	}
+	
+	/* RIGHT COLUMN */
+	.right-column {
+		width: 56%;
+		float: left;
+		margin: 0% 2% 0% 2%;
+		text-align: left;
+	}
+	
+	/* BOTH COLUMNS PARAGRAPH */
+	.left-column p, .right-column p {
+		margin: 0px 2px 0px 2px;
+	}
+	
+	/* CLEARFIX */
+	.clearfix {
+		clear: both;
+	}
+	
+	/* ---------------------------------- DEFAULT ---------------------------------- */
+	
+	/* HEADERS */
+	h1, h2, h3, h4, h5, h6 {
+		text-align: center;
+		color: saddlebrown;
+		font-size: 20px;
+		margin: 0% 2% 0% 2%;
+	}
+
+	/* PARAGRAPHS */
+	p {
+		padding: 0%;
+		color: bisque;
+	}
+	
+	/* LIST ELEMENTS */
+	li {
+		padding: 0%;
+		color: bisque;
+		list-style: none;
+	}
+	
+	/* IMAGES */
+	img {
+		max-width: 100%;
+		height: auto;
+		width: auto;
+	    display: block;
+		margin: 0 auto;
+	}
+	
+	/* LINKS */
+	a {
+		text-decoration: none;
+		color: bisque;
+	}
+	
+	/* ---------------------------------- MEDIA ---------------------------------- */
+	@media screen and (max-width: 478px) {
+		body {
+			font-size: 10px;
+		}
+		.intro {
+			font-size: 13px;
+		}
+		h1, h2, h3, h4, h5 ,h6 {
+			font-size: 16px;
+		}
+	}
+	@media screen and (max-width: 740px) {
+		nav {
+			width: 100%;
+			margin-bottom: 10px;
+		}
+		nav ul{
+			list-style: none;
+			margin: 0 auto;
+			padding-left: 0;
+		}
+		nav ul li {
+			width: 100%;
+		}
+		nav ul li a {
+			padding: 0;
+			border-top: 1px solid black;
+			font-size: 16px;
+		}
+	}
+</style>
+</head>
+
+<body>
+	<div id = "wrapper">
+		<div id = "topbar">
+			<p> A mod by <strong> <a href = "http://www.nexusmods.com/skyrim/users/4979708/?"> NutellaPhreak </a></strong> </p>
+		</div>
+		
+		<nav>
+			<ul>
+				<li> <a href = "file:///C:/Users/Taylor22211/Desktop/HTML%20Website/Website%20Home.html"> Home </a></li>
+				<li class = 'active'> <a href = "#"> Perks </a></li>
+				<li> <a href = "file:///C:/Users/Taylor22211/Desktop/HTML%20Website/Website%20Arrows.html"> Arrows </a></li>
+				<li> <a href = "file:///C:/Users/Taylor22211/Desktop/HTML%20Website/Website%20Images.html"> Images </a></li>
+				<li> <a href = "file:///C:/Users/Taylor22211/Desktop/HTML%20Website/Website%20Credits.html"> Credits </a></li>
+			</ul>
+			<div class = "clearfix"></div>
+		</nav>
+		
+		<header>
+			<a href = "http://www.nexusmods.com/skyrim/mods/65388/?"><img src = "http://i.imgur.com/XnacZKs.jpg" alt = "Archery Perks Overhaul" title = "Archery Perks Overhaul"> </a>
+		</header>
+		
+		<section class = "intro">
+			<p style = "text-align: center">
+				The Archery Perks Overhaul focuses on three diverging perk paths:
+				general, speed, and power. You will specialize in either speed or power. 
+				This means that once you learn a perk from the speed path, you cannot learn
+				any perks from the power path and vice versa.
+			</p>
+			
+			<div class = "left-column">
+				<p>
+					<strong><a href = "#general"><u>General Perks</u></a></strong>
+				</p>
+			</div>
+			<div class = "right-column">
+				<p>These perks are helpful for all archery play styles, and are the core set of perks.</p>
+				<br>
+			</div>
+			<div class = "clearfix"></div>
+			
+			<div class = "left-column">
+				<p>
+					<strong><a href = "#speed"><u>Speed Perks</u></a></strong>
+				</p>
+			</div>
+			<div class = "right-column">
+				<p>These perks reward you for fighting at close range with a bow and allow you to better defend yourself against nearby enemies.</p>
+				<br>
+			</div>
+			<div class = "clearfix"></div>
+			
+			<div class = "left-column">
+				<p>
+					<strong><a href = "#power"><u>Power Perks</u></a></strong>
+				</p>
+			</div>
+			<div class = "right-column">
+				<p>These perks reward you for keeping your distance from enemies and taking time to line up a perfect kill shot.</p>
+				<br>
+			</div>
+			<div class = "clearfix"></div>
+			
+			<div class = "left-column">
+				<p>
+					<strong><a href = "#tree"><u>Skill Tree</u></a></strong>
+				</p>
+			</div>
+			
+			<div class = "right-column">
+				<p>The archery perk tree was rebuilt to complement the diverging perk paths.</p>
+				<br>
+			</div>
+			<div class = "clearfix"></div>
+			
+		</section>
+		
+		<a name = "general"></a>
+		<hr>
+		<h3 class = "left-side">General perks</h3>
+		<hr>
+		
+		<div class = "left-column">
+			<p>
+				Makeshift Arrows<br>
+				(Lvl: 0)
+			</p>
+		</div>
+		<div class = "right-column">
+			<p>Unlock silent, noisemaker, and luminous arrow crafting recipes at the forge.</p>
+		</div>
+		<div class = "clearfix"></div>
+		<hr>
+		
+		<div class = "left-column">
+			<p>
+				Eagle Eye<br>
+				(Lvl: 30, 60)
+			</p>
+		</div>
+		<div class = "right-column">
+			<p>Pressing Block while aiming will zoom in your view (further).</p>
+		</div>
+		<div class = "clearfix"></div>
+		<hr>
+		
+		<div class = "left-column">
+			<p>
+				Hunter's Reflex<br>
+				(Lvl: 30, 60)
+			</p>
+		</div>
+		<div class = "right-column">
+			<p>Pressing block while aiming will slow time by (30%, 60%).</p>
+		</div>
+		<div class = "clearfix"></div>
+		<hr>
+		
+		<div class = "left-column">
+			<p>
+				Archer's Toolbox<br>
+				(Lvl: 40)
+			</p>
+		</div>
+		<div class = "right-column">
+			<p>Unlock blink, tracker, and grappling arrow crafting recipes at the forge.</p>
+		</div>
+		<div class = "clearfix"></div>
+		<hr>
+		
+		<div class = "left-column">
+			<p>
+				Opportunist<br>
+				(Lvl: 50, 80)
+			</p>
+		</div>
+		<div class = "right-column">
+			<p>Shooting an enemy in the back deals (50%, 100%) more damage.</p>
+		</div>
+		<div class = "clearfix"></div>
+		<hr>
+		
+		<div class = "left-column">
+			<p>
+				Missilecraft<br>
+				(Lvl: 90)
+			</p>
+		</div>
+		<div class = "right-column">
+			<p>Unlock barbed, explosive, and sleeping arrow crafting recipes at the forge.</p>
+		</div>
+		<div class = "clearfix"></div>
+		
+		<a name = "speed"></a>
+		<hr>
+		<h3 class = "left-side">Speed perks</h3>
+		<hr>
+		
+		<div class = "left-column">
+			<p>
+				Speed Training<br>
+				(Lvl: 20, 50)
+			</p>
+		</div>
+		<div class = "right-column">
+			<p>Specialize in fast attacks and close ranged combat with bows. Bows fire (25%, 50%) faster.</p>
+		</div>
+		<div class = "clearfix"></div>
+		<hr>
+		
+		<div class = "left-column">
+			<p>
+				Point Blank<br>
+				(Lvl: 30, 60)
+			</p>
+		</div>
+		<div class = "right-column">
+			<p>
+				Bows deal (even) more damage the closer you are to your target.<br><br>
+				40-30 feet: Deal (10%, 15%) more damage.<br>
+				30-20 feet: Deal (20%, 30%) more damage.<br>
+				20-10 feet: Deal (30%, 45%) more damage.<br>
+				10-00 feet: Deal (40%, 60%) more damage.
+			</p>
+		</div>
+		<div class = "clearfix"></div>
+		<hr>
+		
+		<div class = "left-column">
+			<p>
+				Jolt<br>
+				(Lvl: 40, 70)
+			</p>
+		</div>
+		<div class = "right-column">
+			<p>Arrows stagger all but the largest opponents (20%, 40%) of the time.</p>
+		</div>
+		<div class = "clearfix"></div>
+		<hr>
+		
+		<div class = "left-column">
+			<p>
+				Ranger<br>
+				(Lvl: 50)
+			</p>
+		</div>
+		<div class = "right-column">
+			<p>Able to move faster with a drawn bow and recover twice as many arrows from dead bodies.</p>
+		</div>
+		<div class = "clearfix"></div>
+		<hr>
+		
+		<div class = "left-column">
+			<p>
+				Knockout<br>
+				(Lvl: 60, 90)
+			</p>
+		</div>
+		<div class = "right-column">
+			<p>
+				Bashing with a bow knocks the target to the ground
+				(and prevents magicka and stamina usage for 8 seconds).
+				This ability can be used once every 15 seconds.
+			</p>
+		</div>
+		<div class = "clearfix"></div>
+		<hr>
+		
+		<div class = "left-column">
+			<p>
+				Rapid Fire<br>
+				(Lvl: 100)
+			</p>
+		</div>
+		<div class = "right-column">
+			<p>Shots that hit the same target in quick succession deal 10% more damage per hit, up to 50%.</p>
+		</div>
+		<div class = "clearfix"></div>
+		
+		<a name = "power"></a>
+		<hr>
+		<h3 class = "left-side">Power perks</h3>
+		<hr>
+		
+		<div class = "left-column">
+			<p>
+				Power Training<br>
+				(Lvl: 20, 50)
+			</p>
+		</div>
+		<div class = "right-column">
+			<p>Specialize in strong attacks and long ranged combat with bows. Bows deal (25%, 50%) more damage.</p>
+		</div>
+		<div class = "clearfix"></div>
+		<hr>
+		
+		<div class = "left-column">
+			<p>
+				Sharpshooter<br>
+				(Lvl: 30, 60)
+			</p>
+		</div>
+		<div class = "right-column">
+			<p>
+				Bows deal (even) more damage the further you are from your target.<br><br>
+				40-80 feet: Deal (10%, 15%) more damage.<br>
+				80-150 feet: Deal (25%, 35%) more damage.<br>
+				80-150 feet: Deal (25%, 35%) more damage.<br>
+				300+ feet: Deal (60%, 100%) more damage.
+			</p>
+		</div>
+		<div class = "clearfix"></div>
+		<hr>
+		
+		<div class = "left-column">
+			<p>
+				Critical Shot<br>
+				(Lvl: 40, 70)
+			</p>
+		</div>
+		<div class = "right-column">
+			<p>(15%, 20%) chance of a critical hit that does extra damage (50% more critical damage).</p>
+		</div>
+		<div class = "clearfix"></div>
+		<hr>
+		
+		<div class = "left-column">
+			<p>
+				Power Stance<br>
+				(Lvl: 50, 80)
+			</p>
+		</div>
+		<div class = "right-column">
+			<p>Deal (15%, 30%) more damage while you are stationary.</p>
+		</div>
+		<div class = "clearfix"></div>
+		<hr>
+		
+		<div class = "left-column">
+			<p>
+				Stalker<br>
+				(Lvl: 60)
+			</p>
+		</div>
+		<div class = "right-column">
+			<p>Bows have a 100% chance to critically hit when fired from out of combat.</p>
+		</div>
+		<div class = "clearfix"></div>
+		<hr>
+		
+		<div class = "left-column">
+			<p>
+				Overdraw<br>
+				(Lvl: 100)
+			</p>
+		</div>
+		<div class = "right-column">
+			<p>Overdraw a bow for up to 5 seconds to deal up to 100% more damage.</p>
+		</div>
+		<div class = "clearfix"></div>
+		
+		<a name = "tree"></a>
+		<hr>
+		<h3 class = "left-side">Skill tree</h3>
+		<hr>
+		<div class = "bottomimg">
+			<img src = "http://static-8.nexusmods.com/15/mods/110/images/65388-2-1430527816.jpg" text-align = "center">
+		</div>
+		<hr style = "border-color: black">
+	</div>
+	
+</body>
+</html>

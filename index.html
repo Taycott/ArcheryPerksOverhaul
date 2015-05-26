@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset = "utf-8" />
+	<title> Archery Perks Overhaul </title>
+	
+<style>
+	/* ---------------------------------- SECTIONS ---------------------------------- */
+	/* BODY (background, default font) */
+	body {
+		background: bisque;
+		font-family: Verdana, Geneva, sans-serif;
+		font-size: 16px;
+		overflow: auto;
+	}
+	
+	/* WRAPPER (main overlay) */
+	#wrapper {
+		margin: 0 auto;
+		max-width: 1020px;
+		width: 98%;
+		background: black;
+		border: 1px solid white;
+		border-radius: 2px;
+		box-shadow: 0px 0px 10px black;
+	}
+	
+	/* TOPBAR (thin bar on top) */
+	#topbar {
+	width: 100%; /* full length of wrapper */
+	background: saddlebrown;
+	overflow: hidden;
+	
+	}
+	
+	/* TOPBAR TEXT (author credit) */
+	#topbar p {
+		text-align: left;
+		font-size: 12px;
+		padding: 0% 0% 0% 5%;
+		color: bisque;
+	}
+	
+	/* NAVIGATION LIST */
+	nav ul {
+	list-style: none;
+	margin: 0;
+	padding-left: 1%; /* push away from left */
+	}
+	
+	/* NAVIGATION TABS */
+	nav ul li {
+		float: left;
+		width: 19%;
+		padding-right: 1%; /* make space between tabs */
+	}
+	
+	/* NAVIGATION TEXT */
+	nav ul li a {
+		background: bisque;
+		display: block;
+		padding: 5%;
+		font-weight: bold;
+		font-size: 18px;
+		color: saddlebrown;
+		text-align: center;
+	}
+	
+	/* NAVIGATION ACTIVE TAB */
+	nav ul li a:hover, nav ul li.active a {
+		background: saddlebrown;
+		color: bisque;
+	}
+	
+	/* HEADER IMAGE */
+	header {
+		margin: 0% 2%;
+	}
+	
+	/* INTRO */
+	.intro {
+		font-size: 18px;
+		text-align: center;
+		margin: 0% 2%;
+	}
+	
+	/* COLUMNS */
+	.column {
+		width: 46%;
+		float: left;
+		margin: 0% 2%;
+		text-align: left;
+	}
+	
+	footer p, footer a {
+		color: saddlebrown;
+	}
+	
+	/* CLEARFIX */
+	.clearfix {
+		clear: both;
+	}
+	
+	/* ---------------------------------- DEFAULT ---------------------------------- */
+	
+	/* HEADERS */
+	h1, h2, h3, h4, h5, h6 {
+		text-align: center;
+		color: saddlebrown;
+		font-size: 20px;
+		margin: 0% 2% 0% 2%;
+	}
+
+	/* PARAGRAPHS */
+	p {
+		padding: 0%;
+		color: bisque;
+	}
+	
+	/* LIST ELEMENTS */
+	li {
+		padding: 0%;
+		color: bisque;
+		list-style: none;
+	}
+	
+	/* IMAGES */
+	img {
+		max-width: 100%;
+		height: auto;
+		width: auto;
+	    display: block;
+		margin: 0 auto;
+	}
+	
+	/* LINKS */
+	a {
+		text-decoration: none;
+		color: bisque;
+	}
+	
+	/* ---------------------------------- MEDIA ---------------------------------- */
+	@media screen and (max-width: 478px) {
+		body {
+			font-size: 10px;
+		}
+		.intro {
+			font-size: 13px;
+		}
+		h1, h2, h3, h4, h5 ,h6 {
+			font-size: 16px;
+		}
+	}
+	@media screen and (max-width: 740px) {
+		nav {
+			width: 100%;
+			margin-bottom: 10px;
+		}
+		nav ul{
+			list-style: none;
+			margin: 0 auto;
+			padding-left: 0;
+		}
+		nav ul li {
+			width: 100%;
+		}
+		nav ul li a {
+			padding: 0;
+			border-top: 1px solid black;
+			font-size: 16px;
+		}
+	}
+</style>
+</head>
+
+<body>
+	<div id = "wrapper">
+		<div id = "topbar">
+			<p> A mod by <strong> <a href = "http://www.nexusmods.com/skyrim/users/4979708/?"> NutellaPhreak </a></strong> </p>
+		</div>
+		
+		<nav>
+			<ul>
+				<li class = 'active'> <a href = "#"> Home </a></li>
+				<li> <a href = "file:///C:/Users/Taylor22211/Desktop/HTML%20Website/Website%20Perks.html#"> Perks </a></li>
+				<li> <a href = "file:///C:/Users/Taylor22211/Desktop/HTML%20Website/Website%20Arrows.html"> Arrows </a></li>
+				<li> <a href = "file:///C:/Users/Taylor22211/Desktop/HTML%20Website/Website%20Images.html"> Images </a></li>
+				<li> <a href = "file:///C:/Users/Taylor22211/Desktop/HTML%20Website/Website%20Credits.html"> Credits </a></li>
+			</ul>
+			<div class = "clearfix"></div>
+		</nav>
+		
+		<header>
+			<a href = "http://www.nexusmods.com/skyrim/mods/65388/?"><img src = "http://i.imgur.com/XnacZKs.jpg" alt = "Archery Perks Overhaul" title = "Archery Perks Overhaul"> </a>
+		</header>
+		
+		<section class = "intro">
+			<p style = "text-align: center"> The Archery Perks Overhaul attempts to improve Skyrim archery in four major ways. </p>
+		</section>
+		
+
+		
+		<div class = "column">
+			<h3>Balance existing perks</h3>
+			<p>
+				I found a few of the vanilla perks to be either too overpowered (bullseye)
+				or not powerful enough (hunter's discipline) to compete with the other perks.
+				For this reason I tried my best to balance the vanilla perks. I also disliked
+				a few aspects from the vanilla archery tree so I decided to change them.
+				One example of this is only being able to unlock Steady Hand after unlocking
+				Eagle Eye. For detailed perk information visit the perk tab at the top of the page.
+			</p>
+		</div>
+		<div class = "column">
+			<h3>New unique arrows</h3>
+			<p>
+				After a while of playing, skyrim archery can get a bit boring. I have
+				decided to make things more interesting by adding unique, craftable arrows to
+				the game that can be crafted after learning specific archery perks. The effect
+				of these arrows vary greatly and all have a unique purpose. A few examples are,
+				tracker and silent arrows for stealth, explosive and barbed arrows for combat, and
+				grappling arrows for mobility. For detailed information visit the arrow tab at the
+				top of the page.
+			</p>
+		</div>
+		
+		<div class = "clearfix"></div>
+		
+		<div class = "column">
+			<h3>Exciting new perks</h3>
+			<p>
+				Most of Skyrim's archery perks give a small boost to archery without actually changing
+				how you play the game. This mod adds many new perks to the game, a lot of which require
+				you to change your play style in order to receive specific bonuses. These play style changes
+				include things like fighting at close range, shooting enemies in specific areas, and
+				drawing a bow for longer than necessary to receive a massive damage boost. For detailed
+				information visit the perk tab at the top of the page and read the Speed VS Power section.
+			</p>
+		</div>
+		<div class = "column">
+			<h3>Speed VS Power</h3>
+			<p>
+				One of my primary goals for this mod was to encourage multiple different archery play styles.
+				After learning your first perk in the archery skill tree, you now have three diverging paths:
+				General, Speed, and Power. Once you learn a perk from the speed tree, you cannot learn any from
+				the power tree, and vice versa. General perks are beneficial to all archery play styles.
+				Speed perks reward you for fighting at close range and allow you to better defend yourself against nearby enemies.
+				Power perks reward you for keeping your distance from enemies and taking your time to line up a perfect kill shot.
+			</p>
+		</div>
+		
+		<div class = "clearfix"></div>
+		
+		<footer>
+			<div class = "column">
+				<p>
+					Thank you for all the great feedback on the mod so far.
+					If you have any feedback, questions, or suggestions,
+					please feel free to send me a message
+					<strong> <a href = "http://www.nexusmods.com/skyrim/users/4979708/?"> here </a></strong>
+					or leave a comment on my mod
+					<strong> <a href = "http://www.nexusmods.com/skyrim/mods/65388/?"> here </a></strong>.
+				</p>
+			</div>
+			<div class = "column">
+				<p>
+					I look forward to continually updating this mod based on
+					your feedback. I also hope to create more perk mods
+					in the future for some of my other favorite skill trees
+					like sneak and one-handed.
+				</p>
+			</div>
+		</footer>
+		
+	</div>
+	
+</body>
+</html>
+
+
+
+

@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset = "utf-8" />
+	<title> Archery Perks Overhaul - Perks </title>
+	
+<style>
+	/* ---------------------------------- SECTIONS ---------------------------------- */
+	/* BODY (background, default font) */
+	body {
+		background: bisque;
+		font-family: Verdana, Geneva, sans-serif;
+		font-size: 14px;
+		overflow: auto;
+	}
+	
+	/* WRAPPER (main overlay) */
+	#wrapper {
+		margin: 0 auto;
+		max-width: 1020px;
+		width: 98%;
+		background: black;
+		border: 1px solid white;
+		border-radius: 2px;
+		box-shadow: 0px 0px 10px black;
+	}
+	
+	/* TOPBAR (thin bar on top) */
+	#topbar {
+	width: 100%; /* full length of wrapper */
+	background: saddlebrown;
+	overflow: hidden;
+	
+	}
+	
+	/* TOPBAR TEXT (author credit) */
+	#topbar p {
+		text-align: left;
+		font-size: 12px;
+		padding: 0% 0% 0% 5%;
+		color: bisque;
+	}
+	
+	/* NAVIGATION LIST */
+	nav ul {
+	list-style: none;
+	margin: 0;
+	padding-left: 1%; /* push away from left */
+	}
+	
+	/* NAVIGATION TABS */
+	nav ul li {
+		float: left;
+		width: 19%;
+		padding-right: 1%; /* make space between tabs */
+	}
+	
+	/* NAVIGATION TEXT */
+	nav ul li a {
+		background: bisque;
+		display: block;
+		padding: 5%;
+		font-weight: bold;
+		font-size: 18px;
+		color: saddlebrown;
+		text-align: center;
+	}
+	
+	/* NAVIGATION ACTIVE TAB */
+	nav ul li a:hover, nav ul li.active a {
+		background: saddlebrown;
+		color: bisque;
+	}
+	
+	/* HEADER IMAGE */
+	header {
+		margin: 0% 2%;
+	}
+	
+	/* INTRO */
+	.intro {
+		font-size: 18px;
+		text-align: center;
+		margin: 0% 2%;
+	}
+	
+	/* LEFT COLUMN */
+	.left-column {
+		width: 36%;
+		float: left;
+		margin: 0% 2% 0% 2%;
+		text-align: left;
+	}
+	
+	/* RIGHT COLUMN */
+	.right-column {
+		width: 56%;
+		float: left;
+		margin: 0% 2% 0% 2%;
+		text-align: left;
+	}
+	
+	/* BOTH COLUMNS PARAGRAPH */
+	.left-column p, .right-column p {
+		margin: 0px 2px 0px 2px;
+	}
+	
+	/* CLEARFIX */
+	.clearfix {
+		clear: both;
+	}
+	
+	/* ---------------------------------- DEFAULT ---------------------------------- */
+	
+	/* HEADERS */
+	h1, h2, h3, h4, h5, h6 {
+		text-align: center;
+		color: saddlebrown;
+		font-size: 20px;
+		margin: 0% 2% 0% 2%;
+	}
+
+	/* PARAGRAPHS */
+	p {
+		padding: 0%;
+		color: bisque;
+	}
+	
+	/* LIST ELEMENTS */
+	li {
+		padding: 0%;
+		color: bisque;
+		list-style: none;
+	}
+	
+	/* IMAGES */
+	img {
+		max-width: 100%;
+		height: auto;
+		width: auto;
+	    display: block;
+		margin: 0 auto;
+	}
+	
+	/* LINKS */
+	a {
+		text-decoration: none;
+		color: bisque;
+	}
+	
+	/* ---------------------------------- MEDIA ---------------------------------- */
+	@media screen and (max-width: 478px) {
+		body {
+			font-size: 10px;
+		}
+		.intro {
+			font-size: 13px;
+		}
+		h1, h2, h3, h4, h5 ,h6 {
+			font-size: 16px;
+		}
+	}
+	@media screen and (max-width: 740px) {
+		nav {
+			width: 100%;
+			margin-bottom: 10px;
+		}
+		nav ul{
+			list-style: none;
+			margin: 0 auto;
+			padding-left: 0;
+		}
+		nav ul li {
+			width: 100%;
+		}
+		nav ul li a {
+			padding: 0;
+			border-top: 1px solid black;
+			font-size: 16px;
+		}
+	}
+</style>
+</head>
+
+<body>
+	<!-- MAIN OVERLAY (on top of background)-->
+	<div id = "wrapper">
+		<!-- AUTHORS CREDIT (small bar on top) -->
+		<div id = "topbar">
+			<p> A mod by <strong> <a href = "http://www.nexusmods.com/skyrim/users/4979708/?"> NutellaPhreak </a></strong> </p>
+		</div>
+		<!-- NAVIGATIONAL TABS -->
+		<nav>
+			<ul>
+				<li> <a href = "file:///C:/Users/Taylor22211/Desktop/HTML%20Website/Website%20Home.html"> Home </a></li>
+				<li> <a href = "file:///C:/Users/Taylor22211/Desktop/HTML%20Website/Website%20Perks.html#"> Perks </a></li>
+				<li class = 'active'> <a href = "#"> Arrows </a></li>
+				<li> <a href = "file:///C:/Users/Taylor22211/Desktop/HTML%20Website/Website%20Images.html"> Images </a></li>
+				<li> <a href = "file:///C:/Users/Taylor22211/Desktop/HTML%20Website/Website%20Credits.html"> Credits </a></li>
+			</ul>
+			<div class = "clearfix"></div>
+		</nav>
+		<!-- HEADER IMAGE (Archery Perks Overhaul logo) -->
+		<header>
+			<a href = "http://www.nexusmods.com/skyrim/mods/65388/?"><img src = "http://i.imgur.com/XnacZKs.jpg" alt = "Archery Perks Overhaul" title = "Archery Perks Overhaul"> </a>
+		</header>
+		
+		<!-- INTRO SECTION -->
+		<section class = "intro">
+			<p>
+				The Archery Perks Overhaul adds unique, craftable arrows to the game. These arrows
+				can be crafted after learning certain perks, and require the following ingredients:
+				Firewood, corresponding material ingot, mysterious ore. Mysterious ore is a new item
+				that can be found on dead bodies if you killed them with a bow. The new arrows
+				are separated into three ranks based on how powerful they are, and each rank is
+				unlocked by a different perk.
+			</p>
+		</section>
+		
+		<hr>
+		<h3 class = "left-side">Rank 1</h3>
+		<hr>
+		
+		<div class = "left-column">
+			<p>
+				Silent Arrow
+			</p>
+		</div>
+		<div class = "right-column">
+			<p>
+				This arrow is silent.<br><br>
+				<strong>24 arrow crafting recipe:</strong><br>
+				1 Firewood<br>
+				1 ebony ingot<br>
+				8 mysterious ore
+			</p>
+		</div>
+		<div class = "clearfix"></div>
+		<hr>
+		
+		<div class = "left-column">
+			<p>
+				Noisemaker Arrow
+			</p>
+		</div>
+		<div class = "right-column">
+			<p>
+				This arrow makes a loud noise that attracts nearby enemies.<br><br>
+				<strong>24 arrow crafting recipe:</strong><br>
+				1 Firewood<br>
+				1 dwarven ingot<br>
+				8 mysterious ore
+			</p>
+		</div>
+		<div class = "clearfix"></div>
+		<hr>
+		
+		<div class = "left-column">
+			<p>
+				Luminous Arrow
+			</p>
+		</div>
+		<div class = "right-column">
+			<p>
+				This arrow glows, lighting its path.<br><br>
+				<strong>24 arrow crafting recipe:</strong><br>
+				1 Firewood<br>
+				1 malechite ingot<br>
+				8 mysterious ore
+			</p>
+		</div>
+		<div class = "clearfix"></div>
+		<hr>
+		
+		<h3 class = "left-side">Rank 2</h3>
+		<hr>
+		
+		<div class = "left-column">
+			<p>
+				Blink Arrow
+			</p>
+		</div>
+		<div class = "right-column">
+			<p>
+				This arrow travels at an extremely fast speed.<br><br>
+				<strong>24 arrow crafting recipe:</strong><br>
+				1 Firewood<br>
+				1 moonstone ingot<br>
+				16 mysterious ore
+			</p>
+		</div>
+		<div class = "clearfix"></div>
+		<hr>
+		
+		<div class = "left-column">
+			<p>
+				Tracker Arrow
+			</p>
+		</div>
+		<div class = "right-column">
+			<p>
+				This arrow highlights its target.<br><br>
+				<strong>24 arrow crafting recipe:</strong><br>
+				1 Firewood<br>
+				1 falmer ear<br>
+				16 mysterious ore
+			</p>
+		</div>
+		<div class = "clearfix"></div>
+		<hr>
+		
+		<div class = "left-column">
+			<p>
+				Grappling Arrow
+			</p>
+		</div>
+		<div class = "right-column">
+			<p>
+				This arrow will pull you to its impact location.<br><br>
+				<strong>24 arrow crafting recipe:</strong><br>
+				1 Firewood<br>
+				1 dragon bone<br>
+				16 mysterious ore
+			</p>
+		</div>
+		<div class = "clearfix"></div>
+		
+		<hr>
+		<h3 class = "left-side">Rank 3</h3>
+		<hr>
+		
+		<div class = "left-column">
+			<p>
+				Barbed Arrow
+			</p>
+		</div>
+		<div class = "right-column">
+			<p>
+				This arrow deals additional bleeding damage and pierces armor.<br><br>
+				<strong>24 arrow crafting recipe:</strong><br>
+				1 Firewood<br>
+				1 ebony ingot<br>
+				24 mysterious ore
+			</p>
+		</div>
+		<div class = "clearfix"></div>
+		<hr>
+		
+		<div class = "left-column">
+			<p>
+				Explosive Arrow
+			</p>
+		</div>
+		<div class = "right-column">
+			<p>
+				This arrow explodes on impact.<br><br>
+				<strong>24 arrow crafting recipe:</strong><br>
+				1 Firewood<br>
+				1 dwarven ingot<br>
+				24 mysterious ore
+			</p>
+		</div>
+		<div class = "clearfix"></div>
+		<hr>
+		
+		<div class = "left-column">
+			<p>
+				Proximity Arrow
+			</p>
+		</div>
+		<div class = "right-column">
+			<p>
+				This arrow attaches to a surface and releases sleeping gas when an enemy approaches.<br><br>
+				<strong>24 arrow crafting recipe:</strong><br>
+				1 Firewood<br>
+				1 orichalcum ingot<br>
+				24 mysterious ore
+			</p>
+		</div>
+		<div class = "clearfix"></div>
+		<hr style = "border-color: black">
+		
+		<footer>
+
+		</footer>
+		
+	</div>
+	
+</body>
+</html>
+
+
+
+
+
+
