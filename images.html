@@ -94,6 +94,23 @@
 		clear: both;
 	}
 	
+	/* VIDEOS WRAPPER */
+	.videos {
+		position: relative;
+		padding-bottom: 56.25%; /* 16:9 */
+		padding-top: 25px;
+		height: 0;
+	}
+	
+	/*IFRAME */
+	.videos iframe {
+		position: absolute;
+		top: 0;
+		left: 2%;
+		width: 96%;
+		height: 96%;
+	}
+	
 	/* ---------------------------------- DEFAULT ---------------------------------- */
 	
 	/* HEADERS */
@@ -123,6 +140,14 @@
 		height: auto;
 		width: auto;
 	    display: block;
+		margin: 0 auto;
+	}
+	
+	/* VIDEOS */
+	video {
+		width: 100%;
+		height: auto;
+		display: block;
 		margin: 0 auto;
 	}
 	
@@ -193,52 +218,64 @@
 		<div>
 			<h3>Distance references</h3>
 		</div>
-		<div class = "images">
-			<div class = "clearfix"></div>
-			
-			<div class = "column">
-				<img src = "http://i.imgur.com/lkARpci.jpg">
-			</div>
-			
-			<div class = "column">
-				<img src = "http://i.imgur.com/REhHmfK.jpg">
-			</div>
-			
-			<div class = "column">
-				<img src = "http://i.imgur.com/yn8R7Fg.jpg">
-			</div>
-			
-			<div class = "column">
-				<img src = "http://i.imgur.com/i3e2VQf.jpg">
-			</div>
-			
-			<div class = "column">
-				<img src = "http://i.imgur.com/vCzLLIR.jpg">
-			</div>
-			
-			<div class = "column">
-				<img src = "http://i.imgur.com/e2HbdN2.jpg">
-			</div>
-			
-			<div class = "column">
-				<img src = "http://i.imgur.com/JMVxAfj.jpg">
-			</div>
-			<div class = "clearfix"></div>
-			<div>
-				<h3>Other images</h3>
-			</div>
-			
-			<div class = "column">
-				<img src = "http://static-8.nexusmods.com/15/mods/110/images/65388-2-1430527816.jpg">
-			</div>
-			
-			<div class = "column">
-				<img src = "http://www.meandmydiabetes.com/wp-content/uploads/2011/08/toast.jpg">
-			</div>
-			
-			<div class = "clearfix"></div>
-			
+		
+		<div class = "clearfix"></div>
+		
+		<div class = "column">
+			<img src = "http://i.imgur.com/lkARpci.jpg">
 		</div>
+		
+		<div class = "column">
+			<img src = "http://i.imgur.com/REhHmfK.jpg">
+		</div>
+		
+		<div class = "column">
+			<img src = "http://i.imgur.com/yn8R7Fg.jpg">
+		</div>
+		
+		<div class = "column">
+			<img src = "http://i.imgur.com/i3e2VQf.jpg">
+		</div>
+		
+		<div class = "column">
+			<img src = "http://i.imgur.com/vCzLLIR.jpg">
+		</div>
+		
+		<div class = "column">
+			<img src = "http://i.imgur.com/e2HbdN2.jpg">
+		</div>
+		
+		<div class = "column">
+			<img src = "http://i.imgur.com/JMVxAfj.jpg">
+		</div>
+		
+		<div class = "clearfix"></div>
+		
+		<div>
+			<h3>Other images</h3>
+		</div>
+		
+		<div class = "column">
+			<img src = "http://static-8.nexusmods.com/15/mods/110/images/65388-2-1430527816.jpg">
+		</div>
+		
+		<div class = "column">
+			<img src = "http://www.meandmydiabetes.com/wp-content/uploads/2011/08/toast.jpg">
+		</div>
+		
+		<div class = "clearfix"></div>
+		
+		<div>
+			<h3>Videos</h3>
+		</div>
+		
+		<!--
+		<div class = "videos">
+			<iframe width = "560" height = "349" frameborder = "0" allowfullscreen
+				src = "youtube url, replace watch= with embed">
+			</iframe>
+		</div>
+		-->
 		
 	</div>
 	
