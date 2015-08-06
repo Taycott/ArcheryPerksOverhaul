@@ -6,7 +6,8 @@
 	<meta name = "keywords" content = "skyrim, mod, mods, archery, perk, perks, overhaul, skill, bow, arrow, github, nutellaphreak, taylor">
 	<meta name = "description" content = "Archery Perks Overhaul, a Skyrim mod by NutellaPhreak (Taylor).">
 	<meta name = "author" content = "NutellaPhreak (Taylor)">
-	<title> APO - Images </title>
+	<link rel="shortcut icon" href="http://i.imgur.com/r5yBg2G.png">
+	<title> APO - Visuals </title>
 	
 <style>
 	/* ---------------------------------- SECTIONS ---------------------------------- */
@@ -14,7 +15,7 @@
 	body {
 		background: bisque;
 		font-family: Verdana, Geneva, sans-serif;
-		font-size: 16px;
+		font-size: 14px;
 		overflow: auto;
 	}
 	
@@ -31,18 +32,14 @@
 	
 	/* TOPBAR (thin bar on top) */
 	#topbar {
-	width: 100%; /* full length of wrapper */
-	background: saddlebrown;
-	overflow: hidden;
-	
+		width: 100%; /* full length of wrapper */
+		background: saddlebrown;
+		overflow: hidden;
+		font-size: 12px;
 	}
 	
-	/* TOPBAR TEXT (author credit) */
 	#topbar p {
-		text-align: left;
-		font-size: 12px;
-		padding: 0% 0% 0% 2%;
-		color: bisque;
+		padding-left: 2%;
 	}
 	
 	/* NAVIGATION LIST */
@@ -65,20 +62,21 @@
 		display: block;
 		padding: 3% 0 3% 0;
 		font-weight: bold;
-		font-size: 18px;
+		font-size: 16px;
 		color: saddlebrown;
 		text-align: center;
 	}
 	
-	/* NAVIGATION ACTIVE TAB */
+	/* NAVIGATION HOVER/ACTIVE TAB */
 	nav ul li a:hover, nav ul li.active a {
 		background: saddlebrown;
 		color: bisque;
 	}
 	
-	/* HEADER IMAGE */
-	header {
-		margin: 0% 2%;
+	/* INTRO */
+	.intro {
+		font-size: 16px;
+		text-align: center;
 	}
 	
 	/* COLUMNS */
@@ -86,23 +84,18 @@
 		width: 46%;
 		float: left;
 		margin: 1% 2%;
-		text-align: left;
+
 	}
 	
-	/* CLEARFIX */
-	.clearfix {
-		clear: both;
-	}
-	
-	/* VIDEOS WRAPPER */
+	/* VIDEO WRAPPER */
 	.videos {
 		position: relative;
-		padding-bottom: 56.25%; /* 16:9 */
+		padding-bottom: 56.25%;
 		padding-top: 25px;
 		height: 0;
 	}
 	
-	/*IFRAME */
+	/* IFRAME */
 	.videos iframe {
 		position: absolute;
 		top: 0;
@@ -118,7 +111,7 @@
 		text-align: center;
 		color: saddlebrown;
 		font-size: 20px;
-		margin: 0% 2% 0% 2%;
+		margin: 0 2%;
 	}
 
 	/* PARAGRAPHS */
@@ -157,16 +150,21 @@
 		color: bisque;
 	}
 	
+	/* CLEARFIX */
+	.clearfix {
+		clear: both;
+	}
+	
 	/* ---------------------------------- MEDIA ---------------------------------- */
 	@media screen and (max-width: 478px) {
 		body {
 			font-size: 10px;
 		}
 		.intro {
-			font-size: 13px;
+			font-size: 12px;
 		}
 		h1, h2, h3, h4, h5 ,h6 {
-			font-size: 16px;
+			font-size: 14px;
 		}
 		.column {
 			width: 96%;
@@ -212,7 +210,7 @@
 				<li class = 'odd_left'> <a href = "http://taycott.github.io/ArcheryPerksOverhaul/"> Home </a></li>
 				<li> <a href = "http://taycott.github.io/ArcheryPerksOverhaul/perks"> Perks </a></li>
 				<li class = 'odd_left'> <a href = "http://taycott.github.io/ArcheryPerksOverhaul/arrows"> Arrows </a></li>
-				<li class = 'active'> <a href = "http://taycott.github.io/ArcheryPerksOverhaul/images"> Images </a></li>
+				<li class = 'active'> <a href = "http://taycott.github.io/ArcheryPerksOverhaul/Visuals"> Visuals </a></li>
 				<li class = 'odd_left'> <a href = "http://taycott.github.io/ArcheryPerksOverhaul/comments"> Comments </a></li>
 				<li> <a href = "http://taycott.github.io/ArcheryPerksOverhaul/credits"> Credits </a></li>
 			</ul>
@@ -224,7 +222,9 @@
 		</header>
 		
 		<div>
+			<hr>
 			<h3>Distance references</h3>
+			<hr>
 		</div>
 		
 		<div class = "clearfix"></div>
@@ -260,30 +260,31 @@
 		<div class = "clearfix"></div>
 		
 		<div>
+			<hr>
 			<h3>Other images</h3>
+			<hr>
 		</div>
 		
 		<div class = "column">
 			<img src = "http://static-8.nexusmods.com/15/mods/110/images/65388-2-1430527816.jpg">
 		</div>
 		
-		<div class = "column">
-			<img src = "http://www.meandmydiabetes.com/wp-content/uploads/2011/08/toast.jpg">
-		</div>
-		
 		<div class = "clearfix"></div>
 		
 		<div>
+			<hr>
 			<h3>Videos</h3>
+			<hr>
 		</div>
 		
 		<!--
 		<div class = "videos">
 			<iframe width = "560" height = "349" frameborder = "0" allowfullscreen
-				src = "youtube url, replace watch= with embed">
+				src = "video url, replace watch..= with embed/">
 			</iframe>
 		</div>
 		-->
+		
 		
 	</div>
 	

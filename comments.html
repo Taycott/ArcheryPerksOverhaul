@@ -6,6 +6,7 @@
 	<meta name = "keywords" content = "skyrim, mod, mods, archery, perk, perks, overhaul, skill, bow, arrow, github, nutellaphreak, taylor">
 	<meta name = "description" content = "Archery Perks Overhaul, a Skyrim mod by NutellaPhreak (Taylor).">
 	<meta name = "author" content = "NutellaPhreak (Taylor)">
+	<link rel="shortcut icon" href="http://i.imgur.com/r5yBg2G.png">
 	<title> APO - Comments </title>
 	
 <style>
@@ -31,18 +32,14 @@
 	
 	/* TOPBAR (thin bar on top) */
 	#topbar {
-	width: 100%; /* full length of wrapper */
-	background: saddlebrown;
-	overflow: hidden;
-	
+		width: 100%; /* full length of wrapper */
+		background: saddlebrown;
+		overflow: hidden;
+		font-size: 12px;
 	}
 	
-	/* TOPBAR TEXT (author credit) */
 	#topbar p {
-		text-align: left;
-		font-size: 12px;
-		padding: 0% 0% 0% 2%;
-		color: bisque;
+		padding-left: 2%;
 	}
 	
 	/* NAVIGATION LIST */
@@ -65,53 +62,29 @@
 		display: block;
 		padding: 3% 0 3% 0;
 		font-weight: bold;
-		font-size: 18px;
+		font-size: 16px;
 		color: saddlebrown;
 		text-align: center;
 	}
 	
-	/* NAVIGATION ACTIVE TAB */
+	/* NAVIGATION HOVER/ACTIVE TAB */
 	nav ul li a:hover, nav ul li.active a {
 		background: saddlebrown;
 		color: bisque;
 	}
 	
-	/* HEADER IMAGE */
-	header {
-		margin: 0% 2%;
-	}
-	
 	/* INTRO */
 	.intro {
-		font-size: 18px;
+		font-size: 16px;
 		text-align: center;
+	}
+	
+	/* COLUMNS */
+	.column {
+		width: 46%;
+		float: left;
 		margin: 0% 2%;
-	}
-	
-	/* LEFT COLUMN */
-	.left-column {
-		width: 36%;
-		float: left;
-		margin: 0% 2% 0% 2%;
-		text-align: left;
-	}
-	
-	/* RIGHT COLUMN */
-	.right-column {
-		width: 56%;
-		float: left;
-		margin: 0% 2% 0% 2%;
-		text-align: left;
-	}
-	
-	/* BOTH COLUMNS PARAGRAPH */
-	.left-column p, .right-column p {
-		margin: 0px 2px 0px 2px;
-	}
-	
-	/* CLEARFIX */
-	.clearfix {
-		clear: both;
+
 	}
 	
 	/* ---------------------------------- DEFAULT ---------------------------------- */
@@ -121,7 +94,7 @@
 		text-align: center;
 		color: saddlebrown;
 		font-size: 20px;
-		margin: 0% 2% 0% 2%;
+		margin: 0 2%;
 	}
 
 	/* PARAGRAPHS */
@@ -152,16 +125,21 @@
 		color: bisque;
 	}
 	
+	/* CLEARFIX */
+	.clearfix {
+		clear: both;
+	}
+	
 	/* ---------------------------------- MEDIA ---------------------------------- */
 	@media screen and (max-width: 478px) {
 		body {
 			font-size: 10px;
 		}
 		.intro {
-			font-size: 13px;
+			font-size: 12px;
 		}
 		h1, h2, h3, h4, h5 ,h6 {
-			font-size: 16px;
+			font-size: 14px;
 		}
 	}
 	@media screen and (max-width: 740px) {
@@ -204,7 +182,7 @@
 				<li class = 'odd_left'> <a href = "http://taycott.github.io/ArcheryPerksOverhaul/"> Home </a></li>
 				<li> <a href = "http://taycott.github.io/ArcheryPerksOverhaul/perks"> Perks </a></li>
 				<li class = 'odd_left'> <a href = "http://taycott.github.io/ArcheryPerksOverhaul/arrows"> Arrows </a></li>
-				<li> <a href = "http://taycott.github.io/ArcheryPerksOverhaul/images"> Images </a></li>
+				<li> <a href = "http://taycott.github.io/ArcheryPerksOverhaul/Visuals"> Visuals </a></li>
 				<li class = 'active odd_left'> <a href = "http://taycott.github.io/ArcheryPerksOverhaul/comments"> Comments </a></li>
 				<li> <a href = "http://taycott.github.io/ArcheryPerksOverhaul/credits"> Credits </a></li>
 			</ul>
@@ -216,11 +194,6 @@
 		</header>
 		
 	</div>
-
-	<!-- begin wwww.htmlcommentbox.com -->
-	<div id="HCB_comment_box"><a href="http://www.htmlcommentbox.com">Comment Form</a> <a>is loading comments... </a></div>
-	<script type="text/javascript" id="hcb"> /*<!--*/ if(!window.hcb_user){hcb_user={};} (function(){var s=document.createElement("script"), l=hcb_user.PAGE || (""+window.location).replace(/'/g,"%27"), h="//www.htmlcommentbox.com";s.setAttribute("type","text/javascript");s.setAttribute("src", h+"/jread?page="+encodeURIComponent(l).replace("+","%2B")+"&mod=%241%24wq1rdBcg%24rL4zzkcrtkkU5LmpOlhAm%2F"+"&opts=17166&num=10&ts=1438805495075");if (typeof s!="undefined") document.getElementsByTagName("head")[0].appendChild(s);})(); /*-->*/ </script>
-	<!-- end www.htmlcommentbox.com -->
 		
 </body>
 </html>
